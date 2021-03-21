@@ -1,6 +1,10 @@
 import React from 'react';
-import styles from './Content.module.css';
+import Features from './Features/Features';
 
-const Content = ({ children }) => <div className={styles.Container}>{children}</div>;
+const Content = () => (
+    <>
+        <Features />
+    </>
+);
 
 export default Content;

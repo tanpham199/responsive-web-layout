@@ -108,3 +108,18 @@ input[type='submit']:hover,
 input[type='submit']:active {
     background-color: #cf6d17;
 }
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}

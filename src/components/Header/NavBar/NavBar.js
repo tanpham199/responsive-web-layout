@@ -2,6 +2,7 @@ import React from 'react';
 import NavItem from './NavItem/NavItem';
 import styles from './NavBar.module.css';
 import logoWhite from './logo-white.png';
+import logo from './logo.png';
 import Row from '../../Row/Row';
 
 const navItemContent = [
@@ -30,7 +31,7 @@ const NavBar = ({ sticky }) => {
             <Row>
                 <img src={logoWhite} alt="Omnifood logo" className={styles.Logo} />
                 <a href="#header">
-                    <img src="public/" alt="Omnifood logo" className={styles.LogoBlack} />
+                    <img src={logo} alt="Omnifood logo" className={styles.LogoBlack} />
                 </a>
                 <ul className={styles.NavMenu}>
                     {navItemContent.map((content, i) => (
