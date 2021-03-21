@@ -35,15 +35,15 @@ const Features = () => (
         <Row>
             <h2>Get food fast &mdash; not fast food</h2>
             <p className={styles.LongCopy}>
-                Hello, we're Omnifood, your new premium food delivery service. We know you're always
-                busy. No time for cooking. So let us take care of that, we're really good at it, we
-                promise!
+                Hello, we&apos;re Omnifood, your new premium food delivery service. We know
+                you&apos;re always busy. No time for cooking. So let us take care of that,
+                we&apos;re really good at it, we promise!
             </p>
         </Row>
         <Row>
             {featureContents.map((feature, i) => (
                 <Feature
-                    key={`feature ${i}`}
+                    key={`feature ${i.toString()}`}
                     icon={feature.icon}
                     title={feature.title}
                     desc={feature.desc}

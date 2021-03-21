@@ -1,6 +1,6 @@
+import React, { useEffect } from 'react';
 import Content from './components/Content/Content';
 import Header from './components/Header/Header';
-import { useEffect } from 'react';
 
 const App = () => {
     useEffect(() => {
@@ -10,7 +10,7 @@ const App = () => {
         <>
             <Header />
             <Content />
-            <div style={{ height: '2000px' }}></div>
+            <div style={{ height: '2000px' }} />
         </>
     );
 };

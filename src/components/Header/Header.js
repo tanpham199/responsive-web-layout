@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Waypoint } from 'react-waypoint';
 import NavBar from './NavBar/NavBar';
 import styles from './Header.module.css';
 import Button from '../Button/Button';
-import { Waypoint } from 'react-waypoint';
 
 class Header extends Component {
     state = {
@@ -18,10 +18,11 @@ class Header extends Component {
     };
 
     render() {
+        const { sticky } = this.state;
         return (
             <>
                 <header id="header" className={styles.Header}>
-                    <NavBar sticky={this.state.sticky} />
+                    <NavBar sticky={sticky} />
                     <div className={styles.HeroTextBox}>
                         <h1>
                             Goodbye junk food.
@@ -29,14 +30,14 @@ class Header extends Component {
                             Hello super healthy meals.
                         </h1>
                         <Button href="#plans" type="full">
-                            I'm hungry
+                            I&apos;m hungry
                         </Button>
                         <Button href="#features" type="ghost">
                             Show me more
                         </Button>
                     </div>
                 </header>
-                <Waypoint onEnter={this.onEnterViewport} onLeave={this.onLeaveViewport}></Waypoint>
+                <Waypoint onEnter={this.onEnterViewport} onLeave={this.onLeaveViewport} />
             </>
         );
     }

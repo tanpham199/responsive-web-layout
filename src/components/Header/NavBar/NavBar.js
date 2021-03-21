@@ -35,13 +35,13 @@ const NavBar = ({ sticky }) => {
                 </a>
                 <ul className={styles.NavMenu}>
                     {navItemContent.map((content, i) => (
-                        <NavItem key={`navItem ${i}`} href={content.href}>
+                        <NavItem key={`navItem ${i.toString()}`} href={content.href}>
                             {content.text}
                         </NavItem>
                     ))}
                 </ul>
-                <button className={styles.MobileNavBarIcon}>
-                    <i className="ion-navicon-round"></i>
+                <button className={styles.MobileNavBarIcon} type="button">
+                    <i className="ion-navicon-round" />
                 </button>
             </Row>
         </nav>
