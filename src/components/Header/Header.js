@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Waypoint } from 'react-waypoint';
 import NavBar from './NavBar/NavBar';
 import styles from './Header.module.css';
-import Button from '../Button/Button';
+import Button from '../utils/Button/Button';
 
 class Header extends Component {
     state = {

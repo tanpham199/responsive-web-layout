@@ -1,5 +1,5 @@
 import React from 'react';
-import Row from '../../Row/Row';
+import Row from '../../utils/Row/Row';
 import styles from './Features.module.css';
 import Feature from './Feature/Feature';
 

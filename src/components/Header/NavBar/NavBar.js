@@ -3,7 +3,7 @@ import NavItem from './NavItem/NavItem';
 import styles from './NavBar.module.css';
 import logoWhite from './logo-white.png';
 import logo from './logo.png';
-import Row from '../../Row/Row';
+import Row from '../../utils/Row/Row';
 
 const navItemContent = [
     {
