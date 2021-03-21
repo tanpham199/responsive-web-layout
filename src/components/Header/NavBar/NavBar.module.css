@@ -13,11 +13,6 @@
     margin: 5px 0;
 }
 
-.NavBar {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 .NavMenu {
     float: right;
     list-style: none;
@@ -34,4 +29,32 @@
 .MobileNavBarIcon > i {
     font-size: 200%;
     color: #fff;
+}
+
+.Sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.Sticky .NavMenu {
+    margin-top: 18px;
+}
+
+.Sticky .NavMenu li a:link,
+.Sticky .NavMenu li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.Sticky .Logo {
+    display: none;
+}
+
+.Sticky .LogoBlack {
+    display: block;
 }
