@@ -79,17 +79,21 @@ const plansContent = [
     },
 ];
 
-const Plans = () => (
-    <section className={styles.Plans} id="plans">
-        <Row>
-            <h2>Start eating healthy today</h2>
-        </Row>
-        <Row>
-            {plansContent.map((plan, i) => (
-                <Plan key={`plan ${i.toString()}`} {...plan} />
-            ))}
-        </Row>
-    </section>
-);
+const Plans = () => {
+    // eslint-disable-next-line no-alert
+    const signUpHandler = () => alert('Sign Up Successfully!');
+    return (
+        <section className={styles.Plans} id="plans">
+            <Row>
+                <h2>Start eating healthy today</h2>
+            </Row>
+            <Row>
+                {plansContent.map((plan, i) => (
+                    <Plan key={`plan ${i.toString()}`} {...plan} clickEvent={signUpHandler} />
+                ))}
+            </Row>
+        </section>
+    );
+};
 
 export default Plans;

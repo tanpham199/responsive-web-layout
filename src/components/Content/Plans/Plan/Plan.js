@@ -3,7 +3,7 @@ import PlanBenefit from './PlanBenefit/PlanBenefit';
 import Button from '../../../utils/Button/Button';
 import styles from './Plan.module.css';
 
-const Plan = ({ title, type, price, pricePerMeal, benefits, recommended }) => (
+const Plan = ({ title, type, price, pricePerMeal, benefits, recommended, clickEvent }) => (
     <div className="col span-1-of-3">
         <div className={styles.PlanBox}>
             <div>
@@ -27,7 +27,7 @@ const Plan = ({ title, type, price, pricePerMeal, benefits, recommended }) => (
                 </ul>
             </div>
             <div>
-                <Button type={recommended ? 'full' : 'ghost'} href="/">
+                <Button type={recommended ? 'full' : 'ghost'} href="/" clickEvent={clickEvent}>
                     Sign up now
                 </Button>
             </div>
