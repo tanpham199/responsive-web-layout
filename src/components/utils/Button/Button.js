@@ -7,7 +7,7 @@ const ButtonFull = ({ href, type, children }) => {
             ? [styles.Button, styles.ButtonFull].join(' ')
             : [styles.Button, styles.ButtonGhost].join(' ');
     return (
-        <a href={href} className={classes}>
+        <a className={classes} href={href}>
             {children}
         </a>
     );
